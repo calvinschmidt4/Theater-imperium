@@ -1,0 +1,242 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title></title>
+			<link href="../stylesheets/imperium.css" type="text/css" rel="stylesheet" />
+            <script type="text/javascript">
+                                                    
+                <!-- wanneer op de tabs gelikt wordt verandert de content-->  
+                
+                function openMe(inside){
+                    var i;
+                    var content = document.getElementsByClassName("content");
+                    for (i = 0; i<content.length; i++){
+                        content[i].style.display = "none";
+                    }
+                    document.getElementById(inside).style.display = "block";
+                }             
+                          
+                <!--wanneer op IK WORD LID of op het kruisje van de aanmeldpopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                
+                function toggleVisibility (popupposition) {
+                       var submit = document.getElementById(popupposition);
+                       if(submit.style.display == 'block'){
+                          submit.style.display = 'none';
+                       }
+                       else {
+                          submit.style.display = 'block';
+                       }
+                    }
+                
+                <!--wanneer op Nieuws of op het kruisje van de nieuwspopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                
+                function toggleNieuwsVisibility (nieuwsposition) {
+                       var nieuws = document.getElementById(nieuwsposition);
+                       if(nieuws.style.display == 'block'){
+                          nieuws.style.display = 'none';
+                       }
+                       else {
+                          nieuws.style.display = 'block';
+                       }
+                    }                                            
+                                
+                window.onload = function(){                                                   
+                                        
+                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("nieuwsclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                    
+                    document.getElementById("nieuwsclickbottom").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                    
+                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("nieuwscrossclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                                                                                        
+                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("nieuwssubmit").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbevestigingbox');
+                        };
+                                         
+                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("nieuwsbevestigingcrossclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbevestigingbox');
+                        };
+                };
+            </script>
+		</head>
+		<body>
+			<header>				
+				<a href="home.html">
+					<img src="../images/logo.png" title="" alt=""/>
+				</a>
+				<div id="info">
+                    <ul>
+                        <li> <a href="#bottom">Contact</a> </li><li> <a href="#" id="nieuwsclick">Nieuwsbrief</a> </li>
+                    </ul>
+                </div>
+                
+                <a class="flogo">
+                    <img src="../images/facebooklogo.png" title="" alt=""/>
+                </a>
+                <a class="tlogo">
+                    <img src="../images/twitterlogo.png" title="" alt=""/>
+                </a>
+                
+				<nav>	
+					<ul>
+						<li> <a href="voorstellingenhuidig.html">Voorstellingen</a> </li><li> <a href="toneelleden.html">Toneelgroep</a> </li><li> <a href="theaterfaciliteiten.html">Theater</a> </li><li> <a href="#">Reserveren</a> </li><li> <a href="#">Huren</a> </li><li> <a href="galerijhuidig.html">Galerij</a> </li><li> <a href="lidwordenaanmelden.html">Lid worden</a> </li>
+					</ul>
+				</nav>
+			</header>
+            <main>
+                <h1>Voorstellingen</h1>
+                <hgroup>
+                    <ul>
+                        <li><a href="voorstellingenhuidig.html" class="submenuselect">Huidig</a></li><li><a href="voorstellingenaankomend.html">Aankomend</a></li><li><a href="voorstellingenafgelopen.html">Afgelopen</a></li>
+                    </ul>                    
+                </hgroup>                         
+                
+                <section class="submenu">
+                    <img src="../images/voorstellingenhuidig.png" title="" alt=""/>
+                    <p>De voorstellingen die in het Theater Imperium worden uitgevoerd zijn onderstaand in te zien.</p>
+                    <hr>                       
+                </section>
+                
+                <!--onderstaande is de dynamic panel met tabs-->
+                
+                <section class="huidig">
+                                    
+                        <article class="content contentover" id="over">
+                            <h3>Over iedereen die er niet is</h3>
+                            <img src="../images/overiedereen.png" title="" alt=""/>
+                            <h4><strong>Regie:</strong> Alexander Petermans </h4>
+                            <p>Midden in de woestijn belandt een vreemdeling in het huis van Anton, Anne, Daniel en Daphne. Ze zeggen robots te zijn. Robots hebben namelijk geen gevoel. Ze hoeven niet te slapen, niet te eten en niet te huilen. Het enige wat robots kapot kan maken is water – en het regent al 31 dagen. 
+                            </br></br>
+                            Voor Toneelgroep Imperium maakte regisseur Laura Liefting een ontroerende en poëtische voorstelling over het onvermogen om te gaan met verdriet en verlies. Met haar fantasierijke theaterbeelden en frisse spelregie creëert Laura omgevingen waar van alles kan gebeuren. Dat deed zij eerder voor ons in  Is there life on Mars? en De dochter van de Boevenkoning. En nu weer.
+                            </p>
+                        </article>
+                        <article class="content contentrecensies" id="recensies">
+                            <h3>Over iedereen die er niet is</h3>
+                            <p>Een verrassende voorstelling door Toneelgroep Imperium. Ik kom zeker terug voor een volgende voorstelling.
+                               </br></br>
+                               - Leidsch Dagblad - 
+                            </p>
+                            <p>Een voorstelling die zeker niet verkeerd is, maar het was voor mij niet pakkend genoeg.
+                               </br></br>
+                               - Ad - 
+                            </p>
+                            <p>Een verrassende voorstelling door Toneelgroep Imperium. Ik kom zeker terug voor een volgende voorstelling.
+                               </br></br>
+                               - Leidsch Dagblad - 
+                            </p>
+                            <p>Een voorstelling die zeker niet verkeerd is, maar het was voor mij niet pakkend genoeg.
+                               </br></br>
+                               - Ad - 
+                            </p>
+
+                        </article>
+                        <article class="content contentafbeeldingen" id="afbeeldingen">
+                            <h3>Over iedereen die er niet is</h3>
+                            <p>Er zijn nog geen afbeeldingen of video's gemaakt.
+                            </p>
+                        </article>
+                        <article class="content contentreserveren" id="reserveren">
+                            <h3>Over iedereen die er niet is</h3>
+                            <p>Op het moment niet mogelijk.
+                            </p>
+                        </article>
+                    <div class="tabs">
+                    <button class="tabone" onclick="openMe('over')" autofocus>Over</button>
+                    <button class="tabtwo" onclick="openMe('recensies')">Recensies</button>
+                    <button class="tabthree" onclick="openMe('afbeeldingen')">Afbeeldingen/video's</button>
+                    <button class="tabfour" onclick="openMe('reserveren')">Reserveren</button>
+                    </div>
+                </section>
+                
+                
+                <!-- onderstaand is de popup die wordt weergegeven nadat op nieuws wordt geklikt-->
+                
+                <div id="nieuwsbox" class="nieuwsposition">
+                    <div id="nieuwswrapper">
+                        <a href="#" id="nieuwscrossclick">
+                               <img src="../images/crossred.png" title="" alt=""/>
+                        </a>
+                        <div id="nieuwscontainer">
+                            
+                            <p>Vul onderstaand uw e-mailadres in om de nieuwsbrief van Imperium te ontvangen. De nieuwsbrief biedt informatie over Imperium, aankomende voorstellingen, leuke weetjes en nog veel meer.
+                            </p>
+                            
+                            <form action="#" method="get" novalidate>
+                                <fieldset>
+                                    <legend></legend>
+                                    <label for="email"></label>
+                                    <input type="email" id="email" name="email" placeholder="info@voorbeeld.com" required/>
+                                </fieldset>
+                                <input type="submit" value="ONTVANG NIEUWSBRIEF" id="nieuwssubmit"/>
+                            </form>
+                              
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- onderstaand is de popup die wordt weergegeven nadat op ontvang nieuwsbrief wordt geklikt-->
+            
+                <div id="nieuwsbevestigingbox" class="nieuwsposition">
+                    <div id="nieuwswrapper">
+                        <a href="#" id="nieuwsbevestigingcrossclick">
+                               <img src="../images/crossred.png" title="" alt=""/>
+                        </a>
+                        <div id="nieuwscontainer">
+
+                            <p>Bedankt voor uw aanmelding voor de nieuwsbrief!
+                            </p>                              
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <hr>
+                <nav>
+                    <ul>
+                        <li> <a>Route</a> </li><li> <a href="#" id="nieuwsclickbottom">Nieuwsbrief</a> </li><li> <a id="bottom">Theater Imperium</a> </li>
+                    </ul>
+                    <p>
+                    Oude Vest 33e </br>
+                    2312XR Leiden </br>
+                    071 5141035 </br>
+                    </p>
+                </nav>    
+                <div class="social">
+                    <a class="flogo2">
+                        <img src="../images/facebooklogo.png" title="" alt=""/>
+                    </a>
+                    <a class="tlogo2">
+                        <img src="../images/twitterlogo.png" title="" alt=""/>
+                    </a>
+                </div>
+                <hr>
+                <div id="conditions">
+                    <ul>
+                        <li>© 2018</li><li>Algemene voorwaarden</li><li>Privacy</li><li>Cookies</li>
+                    </ul>
+                </div>
+            </footer>
+        </body>
+	
+	
+	</html>

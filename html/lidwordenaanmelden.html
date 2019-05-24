@@ -1,0 +1,340 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title></title>
+			<link href="../stylesheets/imperium.css" type="text/css" rel="stylesheet" />
+            <script type="text/javascript">
+                
+               <!-- wanneer er een onblur plaats vind wordt onderstaande form validatie uitgevoerd-->
+                
+                function checkNotEmpty(formField, messageField){
+                    if(formField.value.length > 0){
+                        messageField.innerHTML = 'OK';
+                    }
+                    else{
+                        messageField.innerHTML = 'Nog niet ingevuld';
+                    }
+                }
+                              
+                <!--wanneer op IK WORD LID of op het kruisje van de aanmeldpopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                
+                function toggleVisibility (popupposition) {
+                       var submit = document.getElementById(popupposition);
+                       if(submit.style.display == 'block'){
+                          submit.style.display = 'none';
+                       }
+                       else {
+                          submit.style.display = 'block';
+                       }
+                    }
+                
+                <!--wanneer op Nieuws of op het kruisje van de nieuwspopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                
+                function toggleNieuwsVisibility (nieuwsposition) {
+                       var nieuws = document.getElementById(nieuwsposition);
+                       if(nieuws.style.display == 'block'){
+                          nieuws.style.display = 'none';
+                       }
+                       else {
+                          nieuws.style.display = 'block';
+                       }
+                    }
+                
+                                
+                
+                
+                window.onload = function(){
+                    
+                    <!--bij onderstaande onblurs wordt de functie voor validatie uitgevoerd-->
+                    
+                    document.getElementById("voornaam").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("naamMelding"));
+				        };
+                    document.getElementById("achternaam").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("achterMelding"));
+				        };
+                    document.getElementById("date").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("dateMelding"));
+				        };
+                    document.getElementById("straatnaam").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("straatMelding"));
+				        };
+                     document.getElementById("huisnummer").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("huisMelding"));
+				        };
+                     document.getElementById("postcode").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("postMelding"));
+				        };
+                     document.getElementById("woonplaats").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("woonMelding"));
+				        };
+                    document.getElementById("mobielenummer").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("mobielMelding"));
+				        };
+                    document.getElementById("email").onblur = function(){
+				        checkNotEmpty(this, document.getElementById("emailMelding"));
+				        };
+                    
+                    <!--bij onderstaande onclick wordt de functie voor lid worden popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("formsubmit").onclick =
+                       
+                        function(){
+                            toggleVisibility ('popupbox');                        
+                        };
+                    
+                    <!--bij onderstaande onclick wordt de functie voor lid worden popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("crossclick").onclick =
+                        function(){
+                            toggleVisibility ('popupbox');
+                        };
+                    
+                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("nieuwsclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                    
+                    document.getElementById("nieuwsclickbottom").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                    
+                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("nieuwscrossclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                                                                                        
+                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("nieuwssubmit").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbevestigingbox');
+                        };
+                                         
+                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("nieuwsbevestigingcrossclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbevestigingbox');
+                        };
+                    
+                };
+                
+            </script>         
+		</head>
+		<body>
+			<header>				
+				<a href="home.html">
+					<img src="../images/logo.png" title="" alt=""/>
+				</a>
+				<div id="info">
+                    <ul>
+                        <li> <a href="#bottom">Contact</a> </li><li> <a href="#" id="nieuwsclick">Nieuwsbrief</a> </li>
+                    </ul>
+                </div>
+                
+                <a class="flogo">
+                    <img src="../images/facebooklogo.png" title="" alt=""/>
+                </a>
+                <a class="tlogo">
+                    <img src="../images/twitterlogo.png" title="" alt=""/>
+                </a>
+                
+				<nav>	
+					<ul>
+						<li> <a href="voorstellingenhuidig.html">Voorstellingen</a> </li><li> <a href="toneelleden.html">Toneelgroep</a> </li><li> <a href="theaterfaciliteiten.html">Theater</a> </li><li> <a href="#">Reserveren</a> </li><li> <a href="#">Huren</a> </li><li> <a href="galerijhuidig.html">Galerij</a> </li><li> <a href="lidwordenaanmelden.html">Lid worden</a> </li>
+					</ul>
+				</nav>
+			</header>
+            <main>
+                <h1>Lid worden</h1>
+                <hgroup>
+                    <ul>
+                        <li><a href="lidwordenaanmelden.html" class="submenuselect">Aanmelden</a></li><li><a href="lidwordenrepetitie.html">Repetitieproces</a></li><li><a href="lidwordencontributie.html">Contributie</a></li><li><a href="lidwordeninzetimperium.html">Inzet voor Imperium</a></li><li><a href="lidwordenaudities.html">Audities</a></li>
+                    </ul>                    
+                </hgroup>                         
+                <section class="submenu">
+                    <img src="../images/lidwordenaanmelden.png" title="" alt=""/>
+                    <p>Meld je via onderstaand formulier aan bij Imperium of neem eerst contact met ons op om een keer langs te komen.
+                    </p>
+                    <hr>              
+                </section>
+                <form action="#" method="get" novalidate />
+                    <fieldset>
+                        <legend>Naam</legend>
+                        <label for="voornaam"></label>
+                        <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required/>
+                        
+                        <label for="achternaam"></label>
+                        <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam" required/>
+                        
+                        <span class="melding" id="naamMelding"></span>
+                        <span class="melding" id="achterMelding"></span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Geboortedatum</legend>
+                        <label for="date"></label>
+                        <input type="date" id="date" name="date" required/>
+                        <span class="melding" id="dateMelding"></span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Adres</legend>
+                        <label for="straatnaam"></label>
+                        <input type="text" id="straatnaam" name="straatnaam" placeholder="Straatnaam" required/>                        
+                        <label for="huisnummer"></label>
+                        <input type="text" id="huisnummer" name="huisnummer" placeholder="Huisnummer" required/>
+                        
+                        <span class="melding" id="straatMelding"></span>
+                        <span class="melding" id="huisMelding"></span>
+                        
+                        <label for="postcode"></label>
+                        <input type="text" id="postcode" name="postcode" placeholder="Postcode" required/>                        
+                        <label for="woonplaats"></label>
+                        <input type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats" required/>
+                        
+                        <span class="melding" id="postMelding"></span>
+                        <span class="melding" id="woonMelding"></span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contactgegevens</legend>
+                        <label for="telefoonnummer"></label>
+                        <input type="number" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer"/>
+                        <label for="mobielenummer"></label>
+                        <input type="number" id="mobielenummer" name="mobielenummer" placeholder="Mobiele nummer"required/>
+                        
+                        <span class="melding" id="mobielMelding"></span>
+                                                                    
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="info@voorbeeld.com" required/>
+                        
+                        <span class="melding" id="emailMelding"></span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ondersteunend commissiewerk</legend>
+                        <label for="werk"></label>
+                        <select id="werk" name="werk" required>
+                            <option value="decor">Decor bouwen</option>
+                            <option value="kleding">Kleding maken/uitzoeken</option>
+                            <option value="teksten">Teksten schrijven voor IMPERIUM en website</option>
+                            <option value="techniek">Techniek (licht/geluid)</option>
+                            <option value="pr">Algemene PR activiteiten</option>
+                            <option value="fotos">Foto's maken (voor PR)</option>
+                            <option value="website">Website onderhouden</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Interesses</legend>
+                        <label for="interesses"></label>
+                        <select id="interesses" name="interesses" required>
+                            <option value="toneelcommissie">Ik word toneelspelend lid en lid van een commissie</option>
+                            <option value="commissie">Ik word alleen lid van een commissie</option>
+                        </select>
+                    </fieldset>                  
+                    <fieldset>
+                        <legend>Overige opmerkingen</legend>
+                        <label for="opmerking"></label>
+                        <textarea id="opmerking" name="opmerking" placeholder="..."></textarea>
+                    </fieldset>
+                    <input type="submit" value="IK WORD LID" id="formsubmit"/>
+                </form>
+                
+                <!-- onderstaand is de popup die wordt weergegeven nadat op ik word lid wordt geklikt-->
+            
+                <div id="popupbox" class="popupposition">
+                    <div id="popupwrapper">
+                        <a href="#" id="crossclick">
+                               <img src="../images/cross.png" title="" alt=""/>
+                        </a>
+                        <div id="popupcontainer">
+                            
+                            <p>Bedankt voor jouw aanmelding bij Toneelgroep Imperium.<br/>
+                               We zullen zo spoedig mogelijk contact met jou opnemen.
+                            </p>
+                              
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- onderstaand is de popup die wordt weergegeven nadat op nieuws wordt geklikt-->
+                
+                <div id="nieuwsbox" class="nieuwsposition">
+                    <div id="nieuwswrapper">
+                        <a href="#" id="nieuwscrossclick">
+                               <img src="../images/crossred.png" title="" alt=""/>
+                        </a>
+                        <div id="nieuwscontainer">
+                            
+                            <p>Vul onderstaand uw e-mailadres in om de nieuwsbrief van Imperium te ontvangen. De nieuwsbrief biedt informatie over Imperium, aankomende voorstellingen, leuke weetjes en nog veel meer.
+                            </p>
+                            
+                            <form action="#" method="get" novalidate>
+                                <fieldset>
+                                    <legend></legend>
+                                    <label for="email"></label>
+                                    <input type="email" id="email" name="email" placeholder="info@voorbeeld.com" required/>
+                                </fieldset>
+                                <input type="submit" value="ONTVANG NIEUWSBRIEF" id="nieuwssubmit"/>
+                            </form>
+                              
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- onderstaand is de popup die wordt weergegeven nadat op ontvang nieuwsbrief wordt geklikt-->
+            
+                <div id="nieuwsbevestigingbox" class="nieuwsposition">
+                    <div id="nieuwswrapper">
+                        <a href="#" id="nieuwsbevestigingcrossclick">
+                               <img src="../images/crossred.png" title="" alt=""/>
+                        </a>
+                        <div id="nieuwscontainer">
+
+                            <p>Bedankt voor uw aanmelding voor de nieuwsbrief!
+                            </p>                              
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+                    
+                
+                
+            </main>
+            <footer>
+                <hr>
+                <nav>
+                    <ul>
+                        <li> <a>Route</a> </li><li> <a href="#" id="nieuwsclickbottom">Nieuwsbrief</a> </li><li> <a id="bottom">Theater Imperium</a> </li>
+                    </ul>
+                    <p>
+                    Oude Vest 33e </br>
+                    2312XR Leiden </br>
+                    071 5141035 </br>
+                    </p>
+                </nav>    
+                <div class="social">
+                    <a class="flogo2">
+                        <img src="../images/facebooklogo.png" title="" alt=""/>
+                    </a>
+                    <a class="tlogo2">
+                        <img src="../images/twitterlogo.png" title="" alt=""/>
+                    </a>
+                </div>
+                <hr>
+                <div id="conditions">
+                    <ul>
+                        <li>© 2018</li><li>Algemene voorwaarden</li><li>Privacy</li><li>Cookies</li>
+                    </ul>
+                </div>
+            </footer>
+        </body>
+	
+	
+	</html>

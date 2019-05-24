@@ -1,0 +1,181 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title></title>
+			<link href="../stylesheets/imperium.css" type="text/css" rel="stylesheet" />
+            <script type="text/javascript">
+                                                    
+                <!--wanneer op IK WORD LID of op het kruisje van de aanmeldpopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                
+                function toggleVisibility (popupposition) {
+                       var submit = document.getElementById(popupposition);
+                       if(submit.style.display == 'block'){
+                          submit.style.display = 'none';
+                       }
+                       else {
+                          submit.style.display = 'block';
+                       }
+                    }
+                
+                <!--wanneer op Nieuws of op het kruisje van de nieuwspopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                
+                function toggleNieuwsVisibility (nieuwsposition) {
+                       var nieuws = document.getElementById(nieuwsposition);
+                       if(nieuws.style.display == 'block'){
+                          nieuws.style.display = 'none';
+                       }
+                       else {
+                          nieuws.style.display = 'block';
+                       }
+                    }                                            
+                                
+                window.onload = function(){                                                   
+                                        
+                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("nieuwsclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                    
+                    document.getElementById("nieuwsclickbottom").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                    
+                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("nieuwscrossclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                                                                                        
+                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("nieuwssubmit").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbevestigingbox');
+                        };
+                                         
+                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("nieuwsbevestigingcrossclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbevestigingbox');
+                        };
+                };
+            </script>
+		</head>
+		<body>
+			<header>				
+				<a href="home.html">
+					<img src="../images/logo.png" title="" alt=""/>
+				</a>
+				<div id="info">
+                    <ul>
+                        <li> <a href="#bottom">Contact</a> </li><li> <a href="#" id="nieuwsclick">Nieuwsbrief</a> </li>
+                    </ul>
+                </div>
+                
+                <a class="flogo">
+                    <img src="../images/facebooklogo.png" title="" alt=""/>
+                </a>
+                <a class="tlogo">
+                    <img src="../images/twitterlogo.png" title="" alt=""/>
+                </a>
+                
+				<nav>	
+					<ul>
+						<li> <a href="voorstellingenhuidig.html">Voorstellingen</a> </li><li> <a href="toneelleden.html">Toneelgroep</a> </li><li> <a href="theaterfaciliteiten.html">Theater</a> </li><li> <a href="#">Reserveren</a> </li><li> <a href="#">Huren</a> </li><li> <a href="galerijhuidig.html">Galerij</a> </li><li> <a href="lidwordenaanmelden.html">Lid worden</a> </li>
+					</ul>
+				</nav>
+			</header>
+            <main>
+                <h1>Toneelgroep</h1>
+                <hgroup>
+                    <ul>
+                        <li><a href="toneelleden.html" class="submenuselect">Leden</a></li><li><a href="toneelcommissies.html">Commissies</a></li><li><a href="toneel60jaar.html">60 jarig bestaan</a></li>
+                    </ul>                    
+                </hgroup>                         
+                <section class="submenu">
+                    <img src="../images/toneelleden.png" title="" alt=""/>
+                    <p>Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad.</br></br>
+                    Mocht je interesse hebben om lid te worden, neem dan gerust contact met ons op.
+                    </p>
+                    <hr>              
+                </section>
+
+                <!-- onderstaand is de popup die wordt weergegeven nadat op nieuws wordt geklikt-->
+                
+                <div id="nieuwsbox" class="nieuwsposition">
+                    <div id="nieuwswrapper">
+                        <a href="#" id="nieuwscrossclick">
+                               <img src="../images/crossred.png" title="" alt=""/>
+                        </a>
+                        <div id="nieuwscontainer">
+                            
+                            <p>Vul onderstaand uw e-mailadres in om de nieuwsbrief van Imperium te ontvangen. De nieuwsbrief biedt informatie over Imperium, aankomende voorstellingen, leuke weetjes en nog veel meer.
+                            </p>
+                            
+                            <form action="#" method="get" novalidate>
+                                <fieldset>
+                                    <legend></legend>
+                                    <label for="email"></label>
+                                    <input type="email" id="email" name="email" placeholder="info@voorbeeld.com" required/>
+                                </fieldset>
+                                <input type="submit" value="ONTVANG NIEUWSBRIEF" id="nieuwssubmit"/>
+                            </form>
+                              
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- onderstaand is de popup die wordt weergegeven nadat op ontvang nieuwsbrief wordt geklikt-->
+            
+                <div id="nieuwsbevestigingbox" class="nieuwsposition">
+                    <div id="nieuwswrapper">
+                        <a href="#" id="nieuwsbevestigingcrossclick">
+                               <img src="../images/crossred.png" title="" alt=""/>
+                        </a>
+                        <div id="nieuwscontainer">
+
+                            <p>Bedankt voor uw aanmelding voor de nieuwsbrief!
+                            </p>                              
+
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+            <footer>
+                <hr>
+                <nav>
+                    <ul>
+                        <li> <a>Route</a> </li><li> <a href="#" id="nieuwsclickbottom">Nieuwsbrief</a> </li><li> <a id="bottom">Theater Imperium</a> </li>
+                    </ul>
+                    <p>
+                    Oude Vest 33e </br>
+                    2312XR Leiden </br>
+                    071 5141035 </br>
+                    </p>
+                </nav>    
+                <div class="social">
+                    <a class="flogo2">
+                        <img src="../images/facebooklogo.png" title="" alt=""/>
+                    </a>
+                    <a class="tlogo2">
+                        <img src="../images/twitterlogo.png" title="" alt=""/>
+                    </a>
+                </div>
+                <hr>
+                <div id="conditions">
+                    <ul>
+                        <li>© 2018</li><li>Algemene voorwaarden</li><li>Privacy</li><li>Cookies</li>
+                    </ul>
+                </div>
+            </footer>
+        </body>
+	
+	
+	</html>

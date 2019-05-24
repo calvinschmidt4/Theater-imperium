@@ -1,0 +1,702 @@
+body {
+	width: 1200px;
+	margin: 0px auto 0px auto;
+	font-family: Bookman Old Style;}
+
+/* header css start */
+
+header {
+	height: 300px;
+	background-image: url("../images/header_langenasleep.jpg");
+	background-repeat: no-repeat;	
+	margin: 0px 0px 0px 0px;}
+
+a img {
+	float: left;
+	margin: 5px 0px 0px 5px;}
+
+#info ul {
+	margin: 0px 0px 0px 890px;
+    padding: 0px;}
+
+#info ul li {
+	display: block;
+	float: left;
+	margin: 10px 0px 0px 0px;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;}
+
+#info ul li a{
+	color: white;
+	text-decoration: none;
+    font-size: 14px;}
+
+#info a:hover{
+	color: #DA0043;}
+
+.flogo img {
+    margin: 10px 23px 0px 10px;}
+
+.tlogo img {
+    margin: 10px 0px 0px 0px;}
+
+header nav ul li{
+	display: inline-block;
+	padding: 0px 0px 0px 0px;}
+	
+header nav ul {
+	padding: 142px 0px 0px 0px;		
+	text-align: center;}
+	
+header nav ul li a{
+	font-size: 14px;
+	color: #DA0043;
+	background-color: white;
+	text-decoration: none;
+	padding: 5px 25px 5px 25px;
+	margin: 0px -1px 0px 0px;}
+	
+header nav ul li a:hover{
+	color: white;
+	background-color: #DA0043;}
+
+/* main css start */
+
+/* main > home css start */
+
+	
+main {
+	width: 1200px;}
+
+h1 {
+	float: left;
+	font-size: 42px;
+	background-color: #DA0043;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	width: 1200px;
+	height: 60px;
+	margin: 0px 0px 30px 0px;}
+
+.nieuws {
+	width: 1140px;
+	margin: 0px auto 0px auto;}
+
+.nieuws article {
+	float: left;
+	width: 240px;
+	height: 380px;
+	margin: 0px 60px 30px 0px;
+    overflow: auto;
+    display: block;}
+
+.nieuws article:nth-child(4n+0) {
+    margin-right: 0px;}
+
+.nieuws h2 {
+	color: white;
+	background-color: #DA0043;
+	width: 240px;
+	height: 40px;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	font-size: 32px;}
+
+.nieuws p {
+	background-color: #F2F2F2;
+	width: 230px;
+	height: 330px;
+	padding: 5px;
+	margin: 0px 0px 0px 0px;
+    font-size: 18px;}
+
+/* main all css start */
+
+hgroup ul li {
+    display: inline-block;}
+
+hgroup a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: 9D9D9C;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    width: 240px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;}
+
+hgroup a:hover {
+    color: #DA0043;}
+
+hgroup ul {
+    display: table;
+    margin: 0px auto 0px auto;
+    padding: 0px;}
+
+#wider ul li a{
+    width: 300px;}
+
+.submenu img {
+    margin: 47px 0px 0px 170px;}
+
+.submenu p {
+    text-align: center;
+    font-size: 18px;
+    width: 860px;
+    margin: 20px auto 0px auto;}
+
+.submenu hr {
+    
+    width: 380px;
+    margin: 20px auto 20px auto;
+    border-bottom: none;
+    border-top: 1px solid #DA0043;
+    height: 0px;}
+
+.submenuselect{
+    color: #DA0043;}
+
+/* main > voorstellingen > huidig/aankomend/afgelopen */
+
+h3 {
+    font-size: 22px;
+	background-color: #DA0043;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    margin-top: 0px;}
+
+.content p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;}
+
+.content {
+    display: none;
+    width: 540px;
+    height: 485px;
+    background-color: #F2F2F2;
+    margin: 0px 330px 0px 330px;
+    border-bottom: 1px solid #DA0043;}
+
+.tabs {
+    width: 540px;
+    margin: 0px auto 0px auto;
+    display: flex;}
+
+button {
+    color: #DA0043;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    width: 135px;
+    text-align: center;
+    margin: 0px;
+    padding: 1px;}
+
+button:focus {
+    color: white;
+    background-color: #DA0043;
+    outline-width: 0}
+
+button:hover {
+    color: white;
+    background-color: #DA0043;}
+
+
+/* main > voorstellingen > huidig css start */
+
+h4 {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    margin: 5px 0px 0px 0px;}
+
+.contentrecensies p {
+    text-align: center;
+    float: left;
+    width: 250px;    
+    overflow: auto;
+    height: 180px;}
+
+.contentreserveren p, .contentafbeeldingen p {
+    text-align: center;
+    margin-top: 200;}
+ 
+.contentover img {
+    margin-left: 35px;}
+
+.contentover {
+    display: block;}
+
+
+/* main > voorstellingen > aankomend css start */
+
+.aankomendcontentover p {
+    text-align: center;
+    margin: 180px 0px 0px 0px;
+    font-size: 18px;}
+
+.aankomendcontentover {
+    display: block;}
+
+.aankomendcontentrecensies p, .aankomendcontentafbeeldingen p, .aankomendcontentreserveren p {
+    text-align: center;    
+    font-size: 14px;
+    margin-top: 180px;}
+
+/* main > voorstellingen > afgelopen css start */ 
+
+.afgelopencontentover {
+    display: block;}
+
+.afgelopencontentover {
+    overflow: auto;}
+
+.afgelopencontentover p {
+    margin-top: 50px;}
+
+.afgelopentabone, .afgelopentabtwo, .afgelopentabthree {
+    width: 180px;} 
+
+.afgelopencontentover h4 {
+    margin-top: 100px;
+    text-align: left;}
+
+.afgelopencontentover img {
+    float: left;
+    margin: 0px 35px;}
+
+.afgelopencontentafbeeldingen img {
+    margin: 75px;
+}
+
+.afgelopencontentrecensies p {
+    text-align: center;
+    float: left;
+    width: 250px;    
+    overflow: auto;
+    height: 180px;}
+
+/* main > theater > faciliteiten css start */
+
+.faccontent {
+    display: none;
+    width: 620px;
+    height: 320px;    
+    margin: 0px 0px 0px 150px;}
+
+.faciliteiten {
+    margin: 0px auto;
+    width: 760px;}
+
+.factabs {
+    float: left;
+    width: 0px;
+    margin: 0px 0px 0px 0px;}
+
+.factabs button {
+    margin: 0px 0px 25px 0px;
+    color: black;
+    font-size: 18px;
+    width: 100px;}
+
+.factabs button:hover {
+    color: #DA0043;
+    background-color: white;}
+
+.factabs button:focus {
+    color: #DA0043;
+    background-color: white;}
+
+.contenttoneel {
+    display: block;}
+
+.faccontent p {
+    width: 300px;    
+    float: right;
+    font-size: 14px;} 
+
+.contenttoneel img {    
+    margin-top: 20px;}
+
+.contenttoneel p {
+    margin-top: 45px;}
+
+.contentdecor img {
+    margin-top: 7px;}
+
+.contentdecor p {
+    margin-top: 40px;}
+
+.contentgeluid img {
+    margin-top: 30px;}
+
+.contentgeluid p {
+    margin-top: 55px;}
+
+.contentlicht img {
+    margin-top: 30px;}
+
+.contentlicht p {
+    margin-top: 45px;}
+
+.contentprojectie img {
+    margin-top: 20px;}
+
+.contentprojectie p {
+    margin-top: -10px;}
+
+.contentafluistering img {
+    margin-top: 20px;}
+
+.contentafluistering p {
+    margin-top: 45px;}
+
+/* main > toneelgroep > commissies css start */
+
+.comcontent {
+    display: none;
+    width: 620px;
+    height: 320px;    
+    margin: 0px 0px 0px 210px;}
+
+.commissie {
+    margin: 0px auto;
+    width: 760px;}
+
+.comtabs {
+    float: left;
+    width: 0px;
+    margin: 0px 0px 0px 0px;}
+
+.comtabs button {
+    margin: 0px 0px 25px 0px;
+    color: black;
+    font-size: 18px;
+    width: 160px;}
+
+.comtabs button:hover {
+    color: #DA0043;
+    background-color: white;}
+
+.comtabs button:focus {
+    color: #DA0043;
+    background-color: white;}
+
+.contentdecorbouwen {
+    display: block;}
+
+.comcontent p {
+    width: 300px;    
+    float: right;
+    font-size: 14px;} 
+
+.contentdecorbouwen img {    
+    margin-top: 45px;}
+
+.contentdecorbouwen p {
+    margin-top: 90px;}
+
+.contentkleding img {
+    margin-top: 55px;}
+
+.contentkleding p {
+    margin-top: 120px;}
+
+.contentteksten img {
+    margin-top: 55px;}
+
+.contentteksten p {
+    margin-top: 105px;}
+
+.contenttechniek img {
+    margin-top: 55px;}
+
+.contenttechniek p {
+    margin-top: 100px;}
+
+.contentpr img {
+    margin-top: 55px;}
+
+.contentpr p {
+    margin-top: 110px;}
+
+.contentfotos img {
+    margin-top: 55px;}
+
+.contentfotos p {
+    margin-top: 115px;}
+
+.contentwebsite img {
+    margin-top: 55px;}
+
+.contentwebsite p {
+    margin-top: 110px;}
+
+/* main > galerij > afgelopen css start */
+
+.galcontent {
+    display: none;
+    width: 620px;
+    height: 320px;    
+    margin: 0px 0px 0px 300px;}
+
+.galerij {
+    margin: 0px auto;
+    width: 760px;}
+
+.galtabs {
+    float: left;
+    width: 0px;
+    margin: 0px 0px 0px -100px;}
+
+.galtabs button {
+    margin: 0px 0px 25px 0px;
+    color: black;
+    font-size: 18px;
+    width: 350px;}
+
+.galtabs button:hover {
+    color: #DA0043;
+    background-color: white;}
+
+.galtabs button:focus {
+    color: #DA0043;
+    background-color: white;}
+
+.contentzinsbegoogeling {
+    display: block;}
+
+.galcontent p {
+    width: 300px;    
+    float: right;
+    font-size: 14px;} 
+
+.galcontent img {
+    margin-top: 65px;}
+
+/* main > galerij > huidig css start */
+
+.contentiedereen {
+    display: block;}
+
+.contentiedereen p {
+    float: left;
+    margin-top: 150px;
+    width: 400px;
+}
+
+/* footer css start */
+	
+footer {
+	margin-top: 200px;
+    width: 1200px;
+    clear: both;}
+
+footer nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+    width: 300px;
+    height: 27px;
+    line-height: 27px;
+	text-align: center;
+    text-decoration: none;}
+	
+footer nav ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;}
+
+footer a:hover{
+	color: #DA0043;}
+
+footer nav ul {
+    margin: 5px 0px 0px 10px;
+    padding: 0px;}
+
+footer p {
+	width: 140px;
+    height: 55px;
+    margin: 0px 0px 0px 730px;
+	font-size: 14px;
+	font-weight: regular;
+	text-align: center;}
+
+footer nav, .social {
+    float: left;}
+
+.social {
+    margin: 20px 0px 0px 30px;}
+
+.flogo2 img {
+    margin: 0px 43px 0px 0px;}
+
+.tlogo2 img {
+    margin: 0px 0px 0px 0px;}
+
+#conditions ul li:hover{
+    color: #DA0043;}
+
+#conditions ul li {
+    display: inline-block;
+    width: 180px;
+    height: 23px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px;
+    line-height: 23px;}
+
+#conditions ul {
+    margin: 0px 0px 0px 240px;
+    padding: 0px;}
+
+footer hr {
+    clear: left;
+    margin: 0px 0px 0px 0px;
+    border-bottom: none;
+    border-top: 1px solid #DA0043;
+    height: 0px;}
+
+/* start form css */
+
+
+form {
+    width: 385px;
+    margin: 0px auto;}
+
+fieldset {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #DA0043;
+    color: #DA0043;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px 0px 15px 0px;}
+
+#naamMelding, #dateMelding, #straatMelding, #postMelding, #emailMelding {
+    font-size: 10px;
+    float: left;
+    margin: -20px 0px -10px 0px;}
+
+#achterMelding, #huisMelding, #woonMelding, #mobielMelding{
+    font-size: 10px;
+    float: right;
+    margin: -20px 0px -10px 0px;}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="email"] {
+    
+    float: left;
+    width: 140px;
+    margin: 0px 100px 30px 0px;}
+
+legend {
+    margin-bottom: 10px;}
+
+#achternaam, #huisnummer, #woonplaats, #date, #mobielenummer, #email  {
+    margin-right: 0px;}
+
+
+#date, #email, #werk, #interesses, #opmerking {
+    width: 385px;}
+
+#opmerking {
+    height: 150px;}
+
+input[type="submit"] {
+    width: 385px;
+    height: 50px;
+    border: 1px solid #DA0043;
+    background-color: transparent;
+    color: #DA0043;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: Bookman Old Style;
+    margin: 30px 0px 80px 0px;}
+
+input[type="submit"]:hover {
+    color: white;
+    background-color: #DA0043;}
+
+/* start form popup css */
+
+.popupposition {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #B39D9D9C; 
+    width: 100%;
+    height: 100%;}
+
+#popupwrapper {
+    width: 700px;
+    margin: 400px auto;
+    text-align: center;}
+
+#popupcontainer {
+    background-color: #DA0043;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;}
+	
+#popupwrapper a img {
+    float: right;
+    margin: 5px 5px 0px 0px;}
+
+/* start nieuws popup css */
+	
+.nieuwsposition {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #B39D9D9C; 
+    width: 100%;
+    height: 100%;}
+
+#nieuwswrapper {
+    width: 700px;
+    margin: 400px auto;
+    text-align: center;}
+
+#nieuwscontainer {
+    background-color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    border-radius: 20px;
+    border: 1px solid #DA0043;
+    font-size: 18px;
+    font-weight: normal;
+    height: 250px;}
+	
+#nieuwswrapper a img {
+    float: right;
+    margin: 5px 5px 0px 0px;}
+
+#nieuwscontainer form fieldset {
+    border: none;
+    margin: -10px auto 0px auto;}
+
+#nieuwscontainer form input[type="submit"]{
+    width: 440px;
+    margin: 30px auto 0px -28px;}
+
+#nieuwswrapper a img {
+    float: right;
+    margin: 10px 10px 0px 0px;}
+
+
+

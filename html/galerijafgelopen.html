@@ -1,0 +1,240 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title></title>
+			<link href="../stylesheets/imperium.css" type="text/css" rel="stylesheet" />
+            <script type="text/javascript">
+                    
+                <!-- wanneer op de tabs gelikt wordt verandert de content-->  
+                
+                function openMe(inside){
+                    var i;
+                    var content = document.getElementsByClassName("galcontent");
+                    for (i = 0; i<content.length; i++){
+                        content[i].style.display = "none";
+                    }
+                    document.getElementById(inside).style.display = "block";
+                }                 
+                
+                <!--wanneer op IK WORD LID of op het kruisje van de aanmeldpopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                
+                function toggleVisibility (popupposition) {
+                       var submit = document.getElementById(popupposition);
+                       if(submit.style.display == 'block'){
+                          submit.style.display = 'none';
+                       }
+                       else {
+                          submit.style.display = 'block';
+                       }
+                    }
+                
+                <!--wanneer op Nieuws of op het kruisje van de nieuwspopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                
+                function toggleNieuwsVisibility (nieuwsposition) {
+                       var nieuws = document.getElementById(nieuwsposition);
+                       if(nieuws.style.display == 'block'){
+                          nieuws.style.display = 'none';
+                       }
+                       else {
+                          nieuws.style.display = 'block';
+                       }
+                    }                                            
+                                
+                window.onload = function(){                                                   
+                                        
+                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("nieuwsclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                    
+                    document.getElementById("nieuwsclickbottom").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                    
+                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("nieuwscrossclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbox');
+                        };
+                                                                                        
+                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup getoond-->
+                    
+                    document.getElementById("nieuwssubmit").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbevestigingbox');
+                        };
+                                         
+                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup weggeklikt-->
+                    
+                    document.getElementById("nieuwsbevestigingcrossclick").onclick =
+                        function(){
+                            toggleNieuwsVisibility ('nieuwsbevestigingbox');
+                        };
+                };
+            </script>
+		</head>
+		<body>
+			<header>				
+				<a href="home.html">
+					<img src="../images/logo.png" title="" alt=""/>
+				</a>
+				<div id="info">
+                    <ul>
+                        <li> <a href="#bottom">Contact</a> </li><li> <a href="#" id="nieuwsclick">Nieuwsbrief</a> </li>
+                    </ul>
+                </div>
+                
+                <a class="flogo">
+                    <img src="../images/facebooklogo.png" title="" alt=""/>
+                </a>
+                <a class="tlogo">
+                    <img src="../images/twitterlogo.png" title="" alt=""/>
+                </a>
+                
+				<nav>	
+					<ul>
+						<li> <a href="voorstellingenhuidig.html">Voorstellingen</a> </li><li> <a href="toneelleden.html">Toneelgroep</a> </li><li> <a href="theaterfaciliteiten.html">Theater</a> </li><li> <a href="#">Reserveren</a> </li><li> <a href="#">Huren</a> </li><li> <a href="galerijhuidig.html">Galerij</a> </li><li> <a href="lidwordenaanmelden.html">Lid worden</a> </li>
+					</ul>
+				</nav>
+			</header>
+            <main>
+                <h1>Galerij</h1>
+                <hgroup id="wider">
+                    <ul>
+                        <li><a href="galerijhuidig.html" >Huidige voorstellingen</a></li><li><a href="galerijafgelopen.html" class="submenuselect">Afgelopen voorstellingen</a></li>
+                    </ul>                    
+                </hgroup>                         
+                <section class="submenu">
+                    <img src="../images/galerijafgelopen.png" title="" alt=""/>
+                    <p>Toneelgroep Imperium heeft de afgelopen jaren veel voorstellingen uitgevoerd. De afbeeldingen en video's die tijdens deze voorstellingen zijn gemaakt zijn onderstaand in te zien.
+                    </p>
+                    <hr>              
+                </section>
+
+                <section class="galerij">
+                        <div class="galtabs">
+                            <button class="comtabone" onclick="openMe('zinsbegoogeling')" autofocus>Zinsbegoogeling - mei 2014</button>
+                            <button class="comtabtwo" onclick="openMe('biest')">Biest - februari 2014</button>
+                            <button class="comtabthree" onclick="openMe('moord')">Moord in de Kertstal - december 2013</button>
+                            <button class="comtabfour" onclick="openMe('mars')">Is There Life on Mars - oktober 2013</button>
+                            <button class="comtabfive" onclick="openMe('vrede')">Vrede - mei 2013</button>
+                            <button class="comtabsix" onclick="openMe('gewurztraminer')">Gewurztraminer - februari 2013</button>
+                            <button class="comtabseven" onclick="openMe('kaatje')">Kaatje is Verdronken - december 2012</button>
+                            <button class="comtabeigth" onclick="openMe('muur')">De Canadese Muur - oktober 2012</button>
+                            <button class="comtabnine" onclick="openMe('oklahoma')">Augustus Oklahoma - mei 2012</button>
+                            <button class="comtabten" onclick="openMe('mededeling')">De Lange Nasleep van een Korte Mededeling -februari 2012</button>
+                            <button class="comtabeleven" onclick="openMe('buffo')">Mistero Buffo - december 2011</button>
+                        </div>            
+                        <article class="galcontent contentzinsbegoogeling" id="zinsbegoogeling">
+                            <img src="../images/galzinsbegoogeling.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentbiest" id="biest">
+                            <img src="../images/galbiest.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentmoord" id="moord">
+                            <img src="../images/galmoord.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentmars" id="mars">
+                            <img src="../images/galmars.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentvrede" id="vrede">
+                            <img src="../images/galvrede.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentgewurztraminer" id="gewurztraminer">
+                            <img src="../images/galgewurztraminer.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentkaatje" id="kaatje">
+                            <img src="../images/galkaatje.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentmuur" id="muur">
+                            <img src="../images/galmuur.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentoklahoma" id="oklahoma">
+                            <img src="../images/galoklahoma.png" title="" alt=""/>                            
+                        </article>
+                        <article class="galcontent contentmededeling" id="mededeling">
+                            <img src="../images/galmededeling.png" title="" alt=""/>
+                        </article>
+                        <article class="galcontent contentbuffo" id="buffo">
+                            <img src="../images/galbuffo.png" title="" alt=""/>                            
+                        </article>
+                </section>
+                
+                <!-- onderstaand is de popup die wordt weergegeven nadat op nieuws wordt geklikt-->
+                
+                <div id="nieuwsbox" class="nieuwsposition">
+                    <div id="nieuwswrapper">
+                        <a href="#" id="nieuwscrossclick">
+                               <img src="../images/crossred.png" title="" alt=""/>
+                        </a>
+                        <div id="nieuwscontainer">
+                            
+                            <p>Vul onderstaand uw e-mailadres in om de nieuwsbrief van Imperium te ontvangen. De nieuwsbrief biedt informatie over Imperium, aankomende voorstellingen, leuke weetjes en nog veel meer.
+                            </p>
+                            
+                            <form action="#" method="get" novalidate>
+                                <fieldset>
+                                    <legend></legend>
+                                    <label for="email"></label>
+                                    <input type="email" id="email" name="email" placeholder="info@voorbeeld.com" required/>
+                                </fieldset>
+                                <input type="submit" value="ONTVANG NIEUWSBRIEF" id="nieuwssubmit"/>
+                            </form>
+                              
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- onderstaand is de popup die wordt weergegeven nadat op ontvang nieuwsbrief wordt geklikt-->
+            
+                <div id="nieuwsbevestigingbox" class="nieuwsposition">
+                    <div id="nieuwswrapper">
+                        <a href="#" id="nieuwsbevestigingcrossclick">
+                               <img src="../images/crossred.png" title="" alt=""/>
+                        </a>
+                        <div id="nieuwscontainer">
+
+                            <p>Bedankt voor uw aanmelding voor de nieuwsbrief!
+                            </p>                              
+
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+            <footer>
+                <hr>
+                <nav>
+                    <ul>
+                        <li> <a>Route</a> </li><li> <a href="#" id="nieuwsclickbottom">Nieuwsbrief</a> </li><li> <a id="bottom">Theater Imperium</a> </li>
+                    </ul>
+                    <p>
+                    Oude Vest 33e </br>
+                    2312XR Leiden </br>
+                    071 5141035 </br>
+                    </p>
+                </nav>    
+                <div class="social">
+                    <a class="flogo2">
+                        <img src="../images/facebooklogo.png" title="" alt=""/>
+                    </a>
+                    <a class="tlogo2">
+                        <img src="../images/twitterlogo.png" title="" alt=""/>
+                    </a>
+                </div>
+                <hr>
+                <div id="conditions">
+                    <ul>
+                        <li>© 2018</li><li>Algemene voorwaarden</li><li>Privacy</li><li>Cookies</li>
+                    </ul>
+                </div>
+            </footer>
+        </body>
+	
+	
+	</html>
