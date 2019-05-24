@@ -6,7 +6,7 @@
 			<link href="stylesheets/imperium.css" type="text/css" rel="stylesheet" />
             <script type="text/javascript">
                                                     
-                <!-- wanneer op de tabs gelikt wordt verandert de content-->  
+                // <!-- wanneer op de tabs gelikt wordt verandert de content-->  
                 
                 function openMe(inside){
                     var i;
@@ -17,7 +17,7 @@
                     document.getElementById(inside).style.display = "block";
                 }
                 
-                <!--wanneer op IK WORD LID of op het kruisje van de aanmeldpopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                // <!--wanneer op IK WORD LID of op het kruisje van de aanmeldpopup wordt geklikt, wordt onderstaande code uitgevoerd-->
                 
                 function toggleVisibility (popupposition) {
                        var submit = document.getElementById(popupposition);
@@ -29,7 +29,7 @@
                        }
                     }
                 
-                <!--wanneer op Nieuws of op het kruisje van de nieuwspopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                // <!--wanneer op Nieuws of op het kruisje van de nieuwspopup wordt geklikt, wordt onderstaande code uitgevoerd-->
                 
                 function toggleNieuwsVisibility (nieuwsposition) {
                        var nieuws = document.getElementById(nieuwsposition);
@@ -43,7 +43,7 @@
                                 
                 window.onload = function(){                                                   
                                         
-                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup getoond-->
+                    // <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup getoond-->
                     
                     document.getElementById("nieuwsclick").onclick =
                         function(){
@@ -55,21 +55,21 @@
                             toggleNieuwsVisibility ('nieuwsbox');
                         };
                     
-                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup weggeklikt-->
+                    // <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup weggeklikt-->
                     
                     document.getElementById("nieuwscrossclick").onclick =
                         function(){
                             toggleNieuwsVisibility ('nieuwsbox');
                         };
                                                                                         
-                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup getoond-->
+                    // <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup getoond-->
                     
                     document.getElementById("nieuwssubmit").onclick =
                         function(){
                             toggleNieuwsVisibility ('nieuwsbevestigingbox');
                         };
                                          
-                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup weggeklikt-->
+                    // <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup weggeklikt-->
                     
                     document.getElementById("nieuwsbevestigingcrossclick").onclick =
                         function(){

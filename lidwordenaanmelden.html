@@ -6,7 +6,7 @@
 			<link href="stylesheets/imperium.css" type="text/css" rel="stylesheet" />
             <script type="text/javascript">
                 
-               <!-- wanneer er een onblur plaats vind wordt onderstaande form validatie uitgevoerd-->
+               // wanneer er een onblur plaats vind wordt onderstaande form validatie uitgevoerd-->
                 
                 function checkNotEmpty(formField, messageField){
                     if(formField.value.length > 0){
@@ -17,7 +17,7 @@
                     }
                 }
                               
-                <!--wanneer op IK WORD LID of op het kruisje van de aanmeldpopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                //wanneer op IK WORD LID of op het kruisje van de aanmeldpopup wordt geklikt, wordt onderstaande code uitgevoerd-->
                 
                 function toggleVisibility (popupposition) {
                        var submit = document.getElementById(popupposition);
@@ -29,7 +29,7 @@
                        }
                     }
                 
-                <!--wanneer op Nieuws of op het kruisje van de nieuwspopup wordt geklikt, wordt onderstaande code uitgevoerd-->
+                //wanneer op Nieuws of op het kruisje van de nieuwspopup wordt geklikt, wordt onderstaande code uitgevoerd-->
                 
                 function toggleNieuwsVisibility (nieuwsposition) {
                        var nieuws = document.getElementById(nieuwsposition);
@@ -46,7 +46,7 @@
                 
                 window.onload = function(){
                     
-                    <!--bij onderstaande onblurs wordt de functie voor validatie uitgevoerd-->
+                    //bij onderstaande onblurs wordt de functie voor validatie uitgevoerd-->
                     
                     document.getElementById("voornaam").onblur = function(){
 				        checkNotEmpty(this, document.getElementById("naamMelding"));
@@ -76,7 +76,7 @@
 				        checkNotEmpty(this, document.getElementById("emailMelding"));
 				        };
                     
-                    <!--bij onderstaande onclick wordt de functie voor lid worden popup uitgevoerd en wordt de popup getoond-->
+                    //bij onderstaande onclick wordt de functie voor lid worden popup uitgevoerd en wordt de popup getoond-->
                     
                     document.getElementById("formsubmit").onclick =
                        
@@ -84,14 +84,14 @@
                             toggleVisibility ('popupbox');                        
                         };
                     
-                    <!--bij onderstaande onclick wordt de functie voor lid worden popup uitgevoerd en wordt de popup weggeklikt-->
+                    //bij onderstaande onclick wordt de functie voor lid worden popup uitgevoerd en wordt de popup weggeklikt-->
                     
                     document.getElementById("crossclick").onclick =
                         function(){
                             toggleVisibility ('popupbox');
                         };
                     
-                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup getoond-->
+                    //bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup getoond-->
                     
                     document.getElementById("nieuwsclick").onclick =
                         function(){
@@ -103,21 +103,21 @@
                             toggleNieuwsVisibility ('nieuwsbox');
                         };
                     
-                    <!--bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup weggeklikt-->
+                    //bij onderstaande onclick wordt de functie voor nieuws popup uitgevoerd en wordt de popup weggeklikt-->
                     
                     document.getElementById("nieuwscrossclick").onclick =
                         function(){
                             toggleNieuwsVisibility ('nieuwsbox');
                         };
                                                                                         
-                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup getoond-->
+                    //bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup getoond-->
                     
                     document.getElementById("nieuwssubmit").onclick =
                         function(){
                             toggleNieuwsVisibility ('nieuwsbevestigingbox');
                         };
                                          
-                    <!--bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup weggeklikt-->
+                    //bij onderstaande onclick wordt de functie voor nieuwsbevestiging popup uitgevoerd en wordt de popup weggeklikt-->
                     
                     document.getElementById("nieuwsbevestigingcrossclick").onclick =
                         function(){
@@ -244,7 +244,7 @@
                     <input type="submit" value="IK WORD LID" id="formsubmit"/>
                 </form>
                 
-                <!-- onderstaand is de popup die wordt weergegeven nadat op ik word lid wordt geklikt-->
+                <!-- onderstaand is de popup die wordt weergegeven nadat op ik word lid wordt geklikt -->
             
                 <div id="popupbox" class="popupposition">
                     <div id="popupwrapper">
@@ -261,7 +261,7 @@
                     </div>
                 </div>
             
-                <!-- onderstaand is de popup die wordt weergegeven nadat op nieuws wordt geklikt-->
+                <!-- onderstaand is de popup die wordt weergegeven nadat op nieuws wordt geklikt -->
                 
                 <div id="nieuwsbox" class="nieuwsposition">
                     <div id="nieuwswrapper">
@@ -286,7 +286,7 @@
                     </div>
                 </div>
             
-                <!-- onderstaand is de popup die wordt weergegeven nadat op ontvang nieuwsbrief wordt geklikt-->
+                <!-- onderstaand is de popup die wordt weergegeven nadat op ontvang nieuwsbrief wordt geklikt -->
             
                 <div id="nieuwsbevestigingbox" class="nieuwsposition">
                     <div id="nieuwswrapper">
